@@ -13,6 +13,7 @@
           <li><a href="QuienSoy.html">QuienSoy</a></li>
           <li><a href="Formulario.html">Formulario</a></li>
           <li><a href="index.html">Main</a></li>
+          <li><a href="Tabla.html"></a></li>
    
 
 
@@ -27,10 +28,10 @@
 
 
 <body>
-    <form action="link.html">
+    <form action="controlador" method="get"  enctype="multipart/form-data">
       <div>
           <label for="TipoEmail">Ingrese un correo</label>
-          <input type="email" id="TipoEmail"   name="email">
+          <input type="text" id="TipoEmail"   name="email" pattern="^[a-zA-Z0-9_.$-+]+@[Aa-z-Z]+\.[a-zA-Z]{2,8}$">
 
       </div>
 
@@ -52,6 +53,30 @@
             <option value="Giron"selected >Giron</option>
 
          </select>
+
+      </div>
+      <div>
+        
+        <label for="opcion1">Hombre</label>
+        <input type="radio" value="Opcion 1" name="opcion" id="opcion1" checked>
+        <br>
+        <label for="opcion2">Mujer</label>
+        <input type="radio" value="Opcion 2" name="opcion" id="opcion2">
+      </div>
+      <div>
+        <label for for="html">HTML</label>
+        <input type="checkbox" value="HTML" name="conocimientos" id="html" checked>
+        <BR>
+        <label for for="java">JAVASCRIPT</label>
+        <input type="checkbox" value="JAVASCRIPT" name="conocimientos" id="java"checked>
+        <br>
+        <label for for="CSS">CSS</label>
+        <input type="checkbox" value="CSS" name="conocimientos" id="CSS">
+      </div>
+
+      <div>
+
+         <input type="file" accept="image/*" multiple>
 
       </div>
     </form>
